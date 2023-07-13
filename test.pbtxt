@@ -1,0 +1,158 @@
+reactions {
+  identifiers {
+    type: NAME
+    value: "lit_pub_bo_836"
+  }
+  identifiers {
+    type: CUSTOM
+    details: "borylation"
+    value: "borylation"
+  }
+  inputs {
+    key: "10512-91-1"
+    value {
+      components {
+        identifiers {
+          type: SMILES
+          value: "O=C(OC)C(NC(=O)C=1C=CC=CC1)C(C)C"
+        }
+        identifiers {
+          type: NAME
+          value: "10512-91-1"
+        }
+        amount {
+          moles {
+            value: 0.6
+            units: MILLIMOLE
+          }
+        }
+        reaction_role: REACTANT
+      }
+    }
+  }
+  inputs {
+    key: "12148-71-9"
+    value {
+      components {
+        identifiers {
+          type: SMILES
+          value: "[O-]1(C)[Ir+]234([O-](C)[Ir+]1567[CH]=8CC[CH]7=[CH]6CC[CH]85)[CH]=9CC[CH]4=[CH]3CC[CH]92"
+        }
+        identifiers {
+          type: NAME
+          value: "12148-71-9"
+        }
+        amount {
+          moles {
+            value: 0.009
+            units: MILLIMOLE
+          }
+        }
+        reaction_role: CATALYST
+      }
+    }
+  }
+  inputs {
+    key: "2366213-69-4"
+    value {
+      components {
+        identifiers {
+          type: SMILES
+          value: "O=C(NC1=CC=CC2=C1NC(=C2C)C)C=3C=NC(=CC3)C4=NC=CC=C4"
+        }
+        identifiers {
+          type: NAME
+          value: "2366213-69-4"
+        }
+        amount {
+          moles {
+            value: 0.0198
+            units: MILLIMOLE
+          }
+        }
+        reaction_role: REAGENT
+      }
+    }
+  }
+  inputs {
+    key: "73183-34-3"
+    value {
+      components {
+        identifiers {
+          type: SMILES
+          value: "O1B(OC(C)(C)C1(C)C)B2OC(C)(C)C(O2)(C)C"
+        }
+        identifiers {
+          type: NAME
+          value: "73183-34-3"
+        }
+        amount {
+          moles {
+            value: 0.3
+            units: MILLIMOLE
+          }
+        }
+        reaction_role: REAGENT
+      }
+    }
+  }
+  conditions {
+    temperature {
+      setpoint {
+        value: 60.0
+        units: CELSIUS
+      }
+    }
+    pressure {
+      control {
+        type: SEALED
+      }
+      atmosphere {
+        type: NITROGEN
+      }
+    }
+  }
+  outcomes {
+    reaction_time {
+      value: 96.0
+      units: HOUR
+    }
+    products {
+      identifiers {
+        type: SMILES
+        value: "O=C(OC)C(NC(=O)C=1C=CC=CC1B2OC(C)(C)C(O2)(C)C)C(C)C"
+      }
+      identifiers {
+        type: NAME
+        value: "2366214-00-6"
+      }
+      measurements {
+        analysis_key: "product_isolated"
+        type: YIELD
+        percentage {
+          value: 63.0
+        }
+      }
+    }
+    analyses {
+      key: "product_isolated"
+      value {
+        type: CUSTOM
+        details: "isolated yield"
+        is_of_isolated_species: true
+      }
+    }
+  }
+  provenance {
+    record_created {
+      time {
+        value: "2023-07-13"
+      }
+      person {
+        username: "Alex T. Mueller"
+        orcid: "0000-0001-8063-9952"
+        email: "alexarnimueller@protonmail.com"
+      }
+    }
+  }
+}
